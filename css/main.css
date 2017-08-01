@@ -88,3 +88,8 @@ a:hover {
 footer {
     border-bottom: var(--border-width) solid var(--accent);
 }
+
+/* Added on my own */
+a.home-a {
+  color: red;
+}
