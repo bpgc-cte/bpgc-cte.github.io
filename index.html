@@ -1,8 +1,7 @@
+<!DOCTYPE html>
+<html lang="en">
 
-  <!DOCTYPE html>
-  <html lang="en">
-
-  <head>
+<head>
   <!-- Required meta tags always come first -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -17,24 +16,47 @@
 
   <!-- Material Design Bootstrap -->
   <link href="./css/mdb.min.css" rel="stylesheet">
-  </head>
+</head>
+<style>
+.trigger {
+  padding: 5px 15px;
+  font-size: 12px;
+  font-weight: 400;
+  border-radius: 10px;
+  background-color: #eee;
+  color: #212121;
+  display: inline-block;
+  margin: 2px 5px;
+}
 
-  <body class="fixed-sn light-blue-skin">
+.hoverable, .trigger {
+  transition: box-shadow 0.55s;
+  box-shadow: 0;
+}
+
+.hoverable:hover, .trigger:hover {
+  transition: box-shadow 0.45s;
+  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+</style>
+<body class="fixed-sn light-blue-skin">
 
   <!--Double navigation-->
   <header>
     <!-- Sidebar navigation -->
     <div id="slide-out" class="side-nav sn-bg-4 fixed">
       <ul class="custom-scrollbar">
-          <!-- Logo -->
-          <li>
-              <div class="logo-wrapper waves-light">
-                  <a href="index.html"><img src="img/ctelogo.png" class="img-fluid flex-center"></a>
-              </div>
-          </li>
-          <!--/. Logo -->
-          <!--Social-->
-          <!-- <li>
+        <!-- Logo -->
+        <li>
+          <div class="logo-wrapper waves-light">
+            <a href="index.html">
+              <img src="img/ctelogo.png" class="img-fluid flex-center">
+            </a>
+          </div>
+        </li>
+        <!--/. Logo -->
+        <!--Social-->
+        <!-- <li>
               <ul class="social">
                   <li><a href="#" class="icons-sm fb-ic"><i class="fa fa-facebook"> </i></a></li>
                   <li><a href="#" class="icons-sm pin-ic"><i class="fa fa-pinterest"> </i></a></li>
@@ -42,53 +64,74 @@
                   <li><a href="#" class="icons-sm tw-ic"><i class="fa fa-twitter"> </i></a></li>
               </ul>
           </li> -->
-          <!--/Social-->
-          <!-- Side navigation links -->
-          <li>
-              <ul class="collapsible collapsible-accordion">
-                <li><a class="collapsible-header waves-effect arrow-r" href="index.html"><i class="fa fa-home"></i> Home</a>
-                </li>
-                  <li><a class="collapsible-header waves-effect arrow-r"><i class="fa fa-chevron-right"></i> Courses<i class="fa fa-angle-down rotate-icon"></i></a>
-                            <div class="collapsible-body">
-                                <ul>
-                                    <li><a href="cte2018.html" class="waves-effect">CTE 2018</a>
-                                    </li>
-                                    <li><a href="cte2017.html" class="waves-effect">CTE 2017</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                  <li><a class="collapsible-header waves-effect arrow-r" href="about.html"><i class="fa fa-eye"></i> About</a>
+        <!--/Social-->
+        <!-- Side navigation links -->
+        <li>
+          <ul class="collapsible collapsible-accordion">
+            <li>
+              <a class="collapsible-header waves-effect arrow-r" href="index.html">
+                <i class="fa fa-home"></i> Home</a>
+            </li>
+            <li>
+              <a class="collapsible-header waves-effect arrow-r">
+                <i class="fa fa-chevron-right"></i> Courses
+                <i class="fa fa-angle-down rotate-icon"></i>
+              </a>
+              <div class="collapsible-body">
+                <ul>
+                  <li>
+                    <a href="cte2018.html" class="waves-effect">CTE 2018</a>
                   </li>
-                  <li><a class="collapsible-header waves-effect arrow-r" href="faq.html"><i class="fa fa-question"></i> FAQs</a>
+                  <li>
+                    <a href="cte2017.html" class="waves-effect">CTE 2017</a>
                   </li>
-                  <li><a class="collapsible-header waves-effect arrow-r" href="team.html"><i class="fa fa-envelope-o"></i> Contact us</i></a>
-                  </li>
-              </ul>
-          </li>
-          <!--/. Side navigation links -->
+                </ul>
+              </div>
+            </li>
+            <li>
+              <a class="collapsible-header waves-effect arrow-r" href="about.html">
+                <i class="fa fa-eye"></i> About</a>
+            </li>
+            <li>
+              <a class="collapsible-header waves-effect arrow-r" href="faq.html">
+                <i class="fa fa-question"></i> FAQs</a>
+            </li>
+            <li>
+              <a class="collapsible-header waves-effect arrow-r" href="team.html">
+                <i class="fa fa-envelope-o"></i> Contact us</i>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <!--/. Side navigation links -->
       </ul>
       <ul class="custom-scrollbar" style="position:absolute; bottom:0;">
-      <li><a class=" waves-effect" href="http://aryanagarwal.me" style="color:white;">Developed By: Aryan Agarwal</a>
+        <li>
+          <a class=" waves-effect" href="http://aryanagarwal.me" style="color:white;">Developed By: Aryan Agarwal</a>
       </ul>
       <div class="sidenav-bg mask-strong"></div>
     </div>
     <!--/. Sidebar navigation -->
     <!-- Navbar -->
     <nav class="navbar fixed-top navbar-toggleable-md navbar-expand-lg scrolling-navbar double-nav">
-        <!-- SideNav slide-out button -->
-        <div class="float-left">
-            <a href="#" data-activates="slide-out" class="button-collapse"><i class="fa fa-bars"></i></a>
-        </div>
-        <!-- Breadcrumb-->
-          <div class="breadcrumb-dn mr-auto">
-            <p>Center For Technical Education</p>
-        </div>
-        <ul class="nav navbar-nav nav-flex-icons ml-auto">
-            <li class="nav-item">
-                <a class="nav-link" href="team.html"><i class="fa fa-envelope"></i> <span class="clearfix d-none d-sm-inline-block">Contact</span></a>
-            </li>
-        </ul>
+      <!-- SideNav slide-out button -->
+      <div class="float-left">
+        <a href="#" data-activates="slide-out" class="button-collapse">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+      <!-- Breadcrumb-->
+      <div class="breadcrumb-dn mr-auto">
+        <p>Center For Technical Education</p>
+      </div>
+      <ul class="nav navbar-nav nav-flex-icons ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="team.html">
+            <i class="fa fa-envelope"></i>
+            <span class="clearfix d-none d-sm-inline-block">Contact</span>
+          </a>
+        </li>
+      </ul>
     </nav>
     <!-- /.Navbar -->
   </header>
@@ -99,42 +142,47 @@
     <!--Jumbotron-->
     <div class="jumbotron text-center blue-grey lighten-5 ">
 
-        <!--Title-->
-        <h1 class="card-title h2-responsive font-bold mt-3"><strong>Center For Technical Education</strong></h1>
+      <!--Title-->
+      <h1 class="card-title h2-responsive font-bold mt-3">
+        <strong>Center For Technical Education</strong>
+      </h1>
 
-        <!--Text-->
-        <div class="d-flex justify-content-center">
-            <p class="card-text my-3" style="max-width: 43rem;">Center for Technical Education (C.T.E) is the largest technical department on campus,
-              established in the year 2012 with the motto of offering technical courses on diverse subjects which are not included extensively in the BITS Curriculum.
-               Every course under C.T.E. is taught by experienced seniors who have a great portfolio in the respective fields and juniors avail those courses for a fee.
-            </p>
-        </div>
+      <!--Text-->
+      <div class="d-flex justify-content-center">
+        <p class="card-text my-3" style="max-width: 43rem;">Center for Technical Education (C.T.E) is the largest technical department on campus, established in the year 2012
+          with the motto of offering technical courses on diverse subjects which are not included extensively in the BITS
+          Curriculum. Every course under C.T.E. is taught by experienced seniors who have a great portfolio in the respective
+          fields and juniors avail those courses for a fee.
+        </p>
+      </div>
+          <hr class="my-4 pb-2">
+          Updates:
+      <a href="pdf/cs.pdf" class="trigger teal lighten-4">Download Class Schedule</a>
 
-        <!-- <hr class="my-4 pb-2"> -->
 
-        <!--Facebook-->
-        <!-- <a type="button" class="btn-floating btn-lg btn-fb"><i class="fa fa-facebook"></i></a> -->
-        <!--Twitter-->
-        <!-- <a type="button" class="btn-floating btn-lg btn-tw"><i class="fa fa-twitter"></i></a> -->
-        <!--Google +-->
-        <!-- <a type="button" class="btn-floating btn-lg btn-gplus"><i class="fa fa-google-plus"></i></a> -->
-        <!--Linkedin-->
-        <!-- <a type="button" class="btn-floating btn-lg btn-li"><i class="fa fa-linkedin"></i></a> -->
-        <!--Instagram-->
-        <!-- <a type="button" class="btn-floating btn-lg btn-ins"><i class="fa fa-instagram"></i></a> -->
-        <!--Pinterest-->
-        <!-- <a type="button" class="btn-floating btn-lg btn-pin"><i class="fa fa-pinterest"></i></a> -->
-        <!--Youtube-->
-        <!-- <a type="button" class="btn-floating btn-lg btn-yt"><i class="fa fa-youtube"></i></a> -->
+      <!--Facebook-->
+      <!-- <a type="button" class="btn-floating btn-lg btn-fb"><i class="fa fa-facebook"></i></a> -->
+      <!--Twitter-->
+      <!-- <a type="button" class="btn-floating btn-lg btn-tw"><i class="fa fa-twitter"></i></a> -->
+      <!--Google +-->
+      <!-- <a type="button" class="btn-floating btn-lg btn-gplus"><i class="fa fa-google-plus"></i></a> -->
+      <!--Linkedin-->
+      <!-- <a type="button" class="btn-floating btn-lg btn-li"><i class="fa fa-linkedin"></i></a> -->
+      <!--Instagram-->
+      <!-- <a type="button" class="btn-floating btn-lg btn-ins"><i class="fa fa-instagram"></i></a> -->
+      <!--Pinterest-->
+      <!-- <a type="button" class="btn-floating btn-lg btn-pin"><i class="fa fa-pinterest"></i></a> -->
+      <!--Youtube-->
+      <!-- <a type="button" class="btn-floating btn-lg btn-yt"><i class="fa fa-youtube"></i></a> -->
 
     </div>
     <!--Jumbotron-->
 
     <section class="team-section text-center my-5">
-    <h2 class="h1-responsive font-weight-bold my-5 ">Courses Offered 2018</h2>
-  </section>
+      <h2 class="h1-responsive font-weight-bold my-5 ">Courses Offered 2018</h2>
+    </section>
 
-  <div class="row">
+    <div class="row">
       <div class="col-sm-4" style="margin-bottom:15px;">
         <!-- Card -->
         <div class="card card-cascade wider">
@@ -150,10 +198,9 @@
           <div class="card-body card-body-cascade text-center">
 
             <!-- Text -->
-            <p class="card-text">Students will learn to code in HTML, CSS and Javascript.
-               The course will also include lectures on using GIT version control system.
-                During the course students will gain intermediate level proficiency for developing React web apps.
-                 This course also includes lectures on introduction to React Native.</p>
+            <p class="card-text">Students will learn to code in HTML, CSS and Javascript. The course will also include lectures on using GIT version
+              control system. During the course students will gain intermediate level proficiency for developing React web
+              apps. This course also includes lectures on introduction to React Native.</p>
 
             <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#webd">Read More</button>
 
@@ -163,86 +210,90 @@
 
         </div>
         <!-- Card -->
+      </div>
+      <div class="col-sm-4">
+        <!-- Card -->
+        <div class="card card-cascade wider">
+
+          <!-- Card image -->
+          <div class="view view-cascade gradient-card-header peach-gradient" style="height:160px">
+
+            <!-- Title -->
+            <h2 class="card-header-title mb-3">Data Science and Machine Learning</h2>
+
+          </div>
+
+          <!-- Card content -->
+          <div class="card-body card-body-cascade text-center">
+
+            <!-- Text -->
+            <p class="card-text">It aims give students the tools and ideas of a very vast and dynamic field of Machine Learning so that they know
+              when to use what to get the best out of their data.Expose students to various ongoing research in the field
+              and how state of the art research can be applied in practice.</p>
+
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ML">Read More</button>
+
+
+          </div>
+          <!-- Card content -->
+
         </div>
-        <div class="col-sm-4">
-          <!-- Card -->
-          <div class="card card-cascade wider">
+        <!-- Card -->
+      </div>
+      <div class="col-sm-4">
+        <!-- Card -->
+        <div class="card card-cascade wider">
 
-            <!-- Card image -->
-            <div class="view view-cascade gradient-card-header peach-gradient" style="height:160px">
+          <!-- Card image -->
+          <div class="view view-cascade gradient-card-header peach-gradient" style="height:160px">
 
-              <!-- Title -->
-              <h2 class="card-header-title mb-3">Data Science and Machine Learning</h2>
-
-            </div>
-
-            <!-- Card content -->
-            <div class="card-body card-body-cascade text-center">
-
-              <!-- Text -->
-              <p class="card-text">It aims give students the tools and ideas of a very vast and dynamic field of Machine Learning so that they know when to use what to get the best out of their data.Expose students to various ongoing research in the field and how state of the art research can be applied in practice.</p>
-
-              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ML">Read More</button>
-
-
-            </div>
-            <!-- Card content -->
+            <!-- Title -->
+            <h2 class="card-header-title mb-3">Introductory Android App Development</h2>
 
           </div>
-          <!-- Card -->
-          </div>
-        <div class="col-sm-4">
-          <!-- Card -->
-          <div class="card card-cascade wider">
 
-            <!-- Card image -->
-            <div class="view view-cascade gradient-card-header peach-gradient" style="height:160px">
+          <!-- Card content -->
+          <div class="card-body card-body-cascade text-center">
 
-              <!-- Title -->
-              <h2 class="card-header-title mb-3">Introductory Android App Development</h2>
-
-            </div>
-
-            <!-- Card content -->
-            <div class="card-body card-body-cascade text-center">
-
-              <!-- Text -->
-              <p class="card-text">Learn Android App development from seniors of Mobile App Club and the creators/developers of amazing apps like Dojma, ZConnect, ARD, BPGC Login, Quark'17, NMD-ATM etc. Join in to be a part of the campus' next generation of app developers. </p>
-              <!-- Link -->
+            <!-- Text -->
+            <p class="card-text">Learn Android App development from seniors of Mobile App Club and the creators/developers of amazing apps like
+              Dojma, ZConnect, ARD, BPGC Login, Quark'17, NMD-ATM etc. Join in to be a part of the campus' next generation
+              of app developers. </p>
+            <!-- Link -->
             <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#appd">Read More</button>
-            </div>
-            <!-- Card content -->
-
           </div>
-          <!-- Card -->
+          <!-- Card content -->
+
         </div>
-        <div class="col-sm-4">
-          <!-- Card -->
-          <div class="card card-cascade wider">
+        <!-- Card -->
+      </div>
+      <div class="col-sm-4">
+        <!-- Card -->
+        <div class="card card-cascade wider">
 
-            <!-- Card image -->
-            <div class="view view-cascade gradient-card-header aqua-gradient" style="height:160px">
+          <!-- Card image -->
+          <div class="view view-cascade gradient-card-header aqua-gradient" style="height:160px">
 
-              <!-- Title -->
-              <h2 class="card-header-title mb-3">Introduction to Programming in C</h2>
-
-            </div>
-
-            <!-- Card content -->
-            <div class="card-body card-body-cascade text-center">
-
-              <!-- Text -->
-              <p class="card-text">tudents enrolled for this course shall be taught Basic C Programming without any pre-reuqisite assumptions.
-Apart from having an edge in the on-campus C programming course, students after completing course shall be take up their own
-C Programming projects....</p>
-              <!-- Link -->
-              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#introC">Read More</button>
-
-            </div>
-            <!-- Card content -->
+            <!-- Title -->
+            <h2 class="card-header-title mb-3">Introduction to Programming in C</h2>
 
           </div>
-          <!-- Card -->
+
+          <!-- Card content -->
+          <div class="card-body card-body-cascade text-center">
+
+            <!-- Text -->
+            <p class="card-text">tudents enrolled for this course shall be taught Basic C Programming without any pre-reuqisite assumptions. Apart
+              from having an edge in the on-campus C programming course, students after completing course shall be take up
+              their own C Programming projects....</p>
+            <!-- Link -->
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#introC">Read More</button>
+
+          </div>
+          <!-- Card content -->
+
+        </div>
+        <!-- Card -->
       </div>
       <div class="col-sm-4">
         <!-- Card -->
@@ -260,7 +311,9 @@ C Programming projects....</p>
           <div class="card-body card-body-cascade text-center">
 
             <!-- Text -->
-            <p class="card-text">The course, Introducing Autodesk Maya 2018 , gives students a comprehensive overview of everything that this software has to offer. We begin with a basic introduction to the UI with a practice assignment wherein we make a model of the solar system.</p>
+            <p class="card-text">The course, Introducing Autodesk Maya 2018 , gives students a comprehensive overview of everything that this
+              software has to offer. We begin with a basic introduction to the UI with a practice assignment wherein we make
+              a model of the solar system.</p>
 
             <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#autodesk">Read More</button>
 
@@ -270,166 +323,176 @@ C Programming projects....</p>
 
         </div>
         <!-- Card -->
+      </div>
+      <div class="col-sm-4" style="margin-bottom:15px;">
+        <!-- Card -->
+        <div class="card card-cascade wider">
+
+          <!-- Card image -->
+          <div class="view view-cascade gradient-card-header aqua-gradient" style="height:160px">
+
+            <!-- Title -->
+            <h2 class="card-header-title mb-3">Vehicle Design and Dynamics</h2>
+
+          </div>
+
+          <!-- Card content -->
+          <div class="card-body card-body-cascade text-center">
+
+            <!-- Text -->
+            <p class="card-text">Vehicle Design and Dynamics course is designed to give an idea of how a vehicle will respond to various situations.
+              This study has its roots in the work of creative engineers who established the methodology of various dynamic
+              systems. As automobiles evolved the understanding of vehicle dynamics became important...</p>
+
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#VehicleDesign">Read More</button>
+
+
+          </div>
+          <!-- Card content -->
+
         </div>
-        <div class="col-sm-4" style="margin-bottom:15px;">
-          <!-- Card -->
-          <div class="card card-cascade wider">
+        <!-- Card -->
+      </div>
+      <div class="col-sm-4" style="margin-bottom:15px;">
+        <!-- Card -->
+        <div class="card card-cascade wider">
 
-            <!-- Card image -->
-            <div class="view view-cascade gradient-card-header aqua-gradient" style="height:160px">
+          <!-- Card image -->
+          <div class="view view-cascade gradient-card-header purple-gradient" style="height:160px">
 
-              <!-- Title -->
-              <h2 class="card-header-title mb-3">Vehicle Design and Dynamics</h2>
-
-            </div>
-
-            <!-- Card content -->
-            <div class="card-body card-body-cascade text-center">
-
-              <!-- Text -->
-              <p class="card-text">Vehicle Design and Dynamics course is designed to give an idea of how a vehicle will respond to various situations. This study has its roots in the work of creative engineers who established the methodology of various dynamic systems. As automobiles evolved the understanding of vehicle dynamics became important...</p>
-
-              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#VehicleDesign">Read More</button>
-
-
-            </div>
-            <!-- Card content -->
+            <!-- Title -->
+            <h2 class="card-header-title mb-3">Introduction to Robotics</h2>
 
           </div>
-          <!-- Card -->
+
+          <!-- Card content -->
+          <div class="card-body card-body-cascade text-center">
+
+            <!-- Text -->
+            <p class="card-text">As the name suggests this course is made with the intention of teaching all those who are enthusiastic in robotics
+              the basics and recent approaches towards this field.</p>
+            <br>
+            <br>
+            <!-- Link -->
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#robotics">Read More</button>
           </div>
-          <div class="col-sm-4" style="margin-bottom:15px;">
-            <!-- Card -->
-            <div class="card card-cascade wider">
+          <!-- Card content -->
 
-              <!-- Card image -->
-              <div class="view view-cascade gradient-card-header purple-gradient" style="height:160px">
-
-                <!-- Title -->
-                <h2 class="card-header-title mb-3">Introduction to Robotics</h2>
-
-              </div>
-
-              <!-- Card content -->
-              <div class="card-body card-body-cascade text-center">
-
-                <!-- Text -->
-                <p class="card-text">As the name suggests this course is made with the intention of teaching all those who are enthusiastic in robotics the basics and recent approaches towards this field.</p><br><br>
-                <!-- Link -->
-              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#robotics">Read More</button>
-              </div>
-              <!-- Card content -->
-
-            </div>
-            <!-- Card -->
-          </div>
-          <div class="col-sm-4" style="margin-bottom:15px;">
-            <!-- Card -->
-            <div class="card card-cascade wider">
-
-              <!-- Card image -->
-              <div class="view view-cascade gradient-card-header aqua-gradient" style="height:160px">
-
-                <!-- Title -->
-                <h2 class="card-header-title mb-3">Astronomy Astrophysics and Cosmology</h2>
-
-              </div>
-
-              <!-- Card content -->
-              <div class="card-body card-body-cascade text-center">
-
-                <!-- Text -->
-                <p class="card-text">In this course, students will be exposed to basic principles, ideas and mathematics involved in cosmology,astronomy and astrophysics. It will also involve learning and using MATLAB and Mathematica to simulate some fascinating results.</p>
-                <!-- Link -->
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#astronomy">Read More</button>
-
-              </div>
-              <!-- Card content -->
-
-            </div>
-            <!-- Card -->
         </div>
-        <div class="col-sm-4" style="margin-bottom:15px;">
-          <!-- Card -->
-          <div class="card card-cascade wider">
+        <!-- Card -->
+      </div>
+      <div class="col-sm-4" style="margin-bottom:15px;">
+        <!-- Card -->
+        <div class="card card-cascade wider">
 
-            <!-- Card image -->
-            <div class="view view-cascade gradient-card-header peach-gradient" style="height:160px">
+          <!-- Card image -->
+          <div class="view view-cascade gradient-card-header aqua-gradient" style="height:160px">
 
-              <!-- Title -->
-              <h2 class="card-header-title mb-3">Introduction to Programming in Python</h2>
-
-            </div>
-
-            <!-- Card content -->
-            <div class="card-body card-body-cascade text-center">
-
-              <!-- Text -->
-              <p class="card-text">With Introduction to Programming with Python we aim to introduce students to multiple programming paradigms, object oriented concepts and functional programming using the language Python. We will start off with the basics of the python programming language and move on to the use of standard libraries, good...</p>
-
-              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#python">Read More</button>
-
-
-            </div>
-            <!-- Card content -->
+            <!-- Title -->
+            <h2 class="card-header-title mb-3">Astronomy Astrophysics and Cosmology</h2>
 
           </div>
-          <!-- Card -->
+
+          <!-- Card content -->
+          <div class="card-body card-body-cascade text-center">
+
+            <!-- Text -->
+            <p class="card-text">In this course, students will be exposed to basic principles, ideas and mathematics involved in cosmology,astronomy
+              and astrophysics. It will also involve learning and using MATLAB and Mathematica to simulate some fascinating
+              results.
+            </p>
+            <!-- Link -->
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#astronomy">Read More</button>
+
           </div>
-          <div class="col-sm-4">
-            <!-- Card -->
-            <div class="card card-cascade wider">
+          <!-- Card content -->
 
-              <!-- Card image -->
-              <div class="view view-cascade gradient-card-header aqua-gradient" style="height:160px">
-
-                <!-- Title -->
-                <h2 class="card-header-title mb-3">Product dev and Design Thinking</h2>
-
-              </div>
-
-              <!-- Card content -->
-              <div class="card-body card-body-cascade text-center">
-
-                <!-- Text -->
-                <p class="card-text">Updating Soon</p>
-                <!-- Link -->
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ProductDev">Read More</button>
-
-              </div>
-              <!-- Card content -->
-
-            </div>
-            <!-- Card -->
         </div>
+        <!-- Card -->
+      </div>
+      <div class="col-sm-4" style="margin-bottom:15px;">
+        <!-- Card -->
+        <div class="card card-cascade wider">
 
-          <div class="col-sm-4" style="margin-bottom:15px;">
-            <!-- Card -->
-            <div class="card card-cascade wider">
+          <!-- Card image -->
+          <div class="view view-cascade gradient-card-header peach-gradient" style="height:160px">
 
-              <!-- Card image -->
-              <div class="view view-cascade gradient-card-header aqua-gradient" style="height:160px">
+            <!-- Title -->
+            <h2 class="card-header-title mb-3">Introduction to Programming in Python</h2>
 
-                <!-- Title -->
-                <h2 class="card-header-title mb-3">Intro to Quantitative Finance & AlgoTrading basics</h2>
+          </div>
 
-              </div>
+          <!-- Card content -->
+          <div class="card-body card-body-cascade text-center">
 
-              <!-- Card content -->
-              <div class="card-body card-body-cascade text-center">
+            <!-- Text -->
+            <p class="card-text">With Introduction to Programming with Python we aim to introduce students to multiple programming paradigms,
+              object oriented concepts and functional programming using the language Python. We will start off with the basics
+              of the python programming language and move on to the use of standard libraries, good...</p>
 
-                <!-- Text -->
-                <p class="card-text">Updating soon!</p>
-
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#quant">Read More</button>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#python">Read More</button>
 
 
-              </div>
-              <!-- Card content -->
+          </div>
+          <!-- Card content -->
 
-            </div>
+        </div>
+        <!-- Card -->
+      </div>
+      <div class="col-sm-4">
+        <!-- Card -->
+        <div class="card card-cascade wider">
+
+          <!-- Card image -->
+          <div class="view view-cascade gradient-card-header aqua-gradient" style="height:160px">
+
+            <!-- Title -->
+            <h2 class="card-header-title mb-3">Product dev and Design Thinking</h2>
+
+          </div>
+
+          <!-- Card content -->
+          <div class="card-body card-body-cascade text-center">
+
+            <!-- Text -->
+            <p class="card-text">Updating Soon</p>
+            <!-- Link -->
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ProductDev">Read More</button>
+
+          </div>
+          <!-- Card content -->
+
+        </div>
+        <!-- Card -->
+      </div>
+
+      <div class="col-sm-4" style="margin-bottom:15px;">
+        <!-- Card -->
+        <div class="card card-cascade wider">
+
+          <!-- Card image -->
+          <div class="view view-cascade gradient-card-header aqua-gradient" style="height:160px">
+
+            <!-- Title -->
+            <h2 class="card-header-title mb-3">Intro to Quantitative Finance & AlgoTrading basics</h2>
+
+          </div>
+
+          <!-- Card content -->
+          <div class="card-body card-body-cascade text-center">
+
+            <!-- Text -->
+            <p class="card-text">Updating soon!</p>
+
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#quant">Read More</button>
+
+
+          </div>
+          <!-- Card content -->
+
+        </div>
+      </div>
     </div>
-  </div>
   </main>
   <!--Main Layout-->
 
@@ -440,75 +503,76 @@ C Programming projects....</p>
     <div class="modal-dialog modal-lg" role="document">
       <div class="modal-content">
         <div class="modal-header">
-       <h5 class="modal-title" id="exampleModalLabel">Astronomy Astrophysics and Cosmology</h5>
-       <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-         <span aria-hidden="true">&times;</span>
-       </button>
-     </div>
-     <div class="modal-body">
-       <div class="row">
-           <!--Accordion wrapper-->
-           <div class="accordion" id="accordion" role="tablist" aria-multiselectable="true">
+          <h5 class="modal-title" id="exampleModalLabel">Astronomy Astrophysics and Cosmology</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <!--Accordion wrapper-->
+            <div class="accordion" id="accordion" role="tablist" aria-multiselectable="true">
 
-               <!-- Accordion card -->
-               <div class="card">
+              <!-- Accordion card -->
+              <div class="card">
 
-                   <!-- Card header -->
-                   <div class="card-header" role="tab" id="headingOne">
-                           <h5 class="mb-0">
-                               Description</i>
-                           </h5>
+                <!-- Card header -->
+                <div class="card-header" role="tab" id="headingOne">
+                  <h5 class="mb-0">
+                    Description</i>
+                  </h5>
 
-                   </div>
+                </div>
 
-                   <!-- Card body -->
-                   <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion" >
-                       <div class="card-body">
-                         In this course, students will be exposed to basic principles, ideas and mathematics
- involved in cosmology,astronomy and astrophysics. It will also involve learning and using
- MATLAB and Mathematica to simulate some fascinating results. We will also teach them
- how to use DS9, an astronomical data analysis tool, to arrive at conclusions on some of the
- astonishing realisations like Hubble’s law, spectral analysis of electromagnetic radiation
- from distant celestial objects. We will make them know the developments in all three fields
- so far and their current status. Also future possible interesting explorations they can do
- based on the course.
-                       </div>
-                   </div>
-               </div>
-               <!-- Accordion card -->
+                <!-- Card body -->
+                <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
+                  <div class="card-body">
+                    In this course, students will be exposed to basic principles, ideas and mathematics involved in cosmology,astronomy and astrophysics.
+                    It will also involve learning and using MATLAB and Mathematica to simulate some fascinating results.
+                    We will also teach them how to use DS9, an astronomical data analysis tool, to arrive at conclusions
+                    on some of the astonishing realisations like Hubble’s law, spectral analysis of electromagnetic radiation
+                    from distant celestial objects. We will make them know the developments in all three fields so far and
+                    their current status. Also future possible interesting explorations they can do based on the course.
+                  </div>
+                </div>
+              </div>
+              <!-- Accordion card -->
 
-               <!-- Accordion card -->
-               <div class="card">
+              <!-- Accordion card -->
+              <div class="card">
 
-                   <!-- Card header -->
-                   <div class="card-header" role="tab" id="headingThree">
-                           <h5 class="mb-0">
-                               Instructors</i>
-                           </h5>
+                <!-- Card header -->
+                <div class="card-header" role="tab" id="headingThree">
+                  <h5 class="mb-0">
+                    Instructors</i>
+                  </h5>
 
-                   </div>
-                   <div class="card-body">
-                     <b>Instructor-in-charge:</b>
-                     <br> Surendra Padamata 2015A4PS0387G <br>
-                      Shirin Kaushik 2017AAPS0229G <br>
-                      Nikhil Bisht  2017B5PS0610G <br>
-                      Ayush Romi Agrawal 2017B5PS0720G <br>
+                </div>
+                <div class="card-body">
+                  <b>Instructor-in-charge:</b>
+                  <br> Surendra Padamata 2015A4PS0387G
+                  <br> Shirin Kaushik 2017AAPS0229G
+                  <br> Nikhil Bisht 2017B5PS0610G
+                  <br> Ayush Romi Agrawal 2017B5PS0720G
+                  <br>
 
-                   </div>
+                </div>
 
-               </div>
-               <!-- Accordion card -->
-           </div>
-           <!--/.Accordion wrapper-->
+              </div>
+              <!-- Accordion card -->
+            </div>
+            <!--/.Accordion wrapper-->
 
-         </div>
-       </div>
-          <div class="modal-footer">
-            <a href="pdf/celestia.pdf" target=”_blank”> <button type="button" class="btn btn-secondary">Download Course Handout</button></a>
           </div>
+        </div>
+        <div class="modal-footer">
+          <a href="pdf/celestia.pdf" target=”_blank”>
+            <button type="button" class="btn btn-secondary">Download Course Handout</button>
+          </a>
         </div>
       </div>
     </div>
+  </div>
 
   <!-- Modal: modalQuickView -->
   <!-- Modal: modalQuickView -->
@@ -516,69 +580,74 @@ C Programming projects....</p>
     <div class="modal-dialog modal-lg" role="document">
       <div class="modal-content">
         <div class="modal-header">
-       <h5 class="modal-title" id="exampleModalLabel">Introduction to Programming in Python</h5>
-       <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-         <span aria-hidden="true">&times;</span>
-       </button>
-     </div>
-     <div class="modal-body">
-       <div class="row">
-           <!--Accordion wrapper-->
-           <div class="accordion" id="accordion" role="tablist" aria-multiselectable="true">
+          <h5 class="modal-title" id="exampleModalLabel">Introduction to Programming in Python</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <!--Accordion wrapper-->
+            <div class="accordion" id="accordion" role="tablist" aria-multiselectable="true">
 
-               <!-- Accordion card -->
-               <div class="card">
+              <!-- Accordion card -->
+              <div class="card">
 
-                   <!-- Card header -->
-                   <div class="card-header" role="tab" id="headingOne">
-                           <h5 class="mb-0">
-                               Description</i>
-                           </h5>
+                <!-- Card header -->
+                <div class="card-header" role="tab" id="headingOne">
+                  <h5 class="mb-0">
+                    Description</i>
+                  </h5>
 
-                   </div>
+                </div>
 
-                   <!-- Card body -->
-                   <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion" >
-                       <div class="card-body">
-                         With Introduction to Programming with Python we aim to introduce students to multiple programming paradigms, object oriented concepts and functional programming using the language Python.
-                          We will start off with the basics of the python programming language and move on to the use of standard libraries, good programming practices and unit testing
-                          We will also introduce the students to web application development and scientific computing using Python
-                       </div>
-                   </div>
-               </div>
-               <!-- Accordion card -->
+                <!-- Card body -->
+                <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
+                  <div class="card-body">
+                    With Introduction to Programming with Python we aim to introduce students to multiple programming paradigms, object oriented
+                    concepts and functional programming using the language Python. We will start off with the basics of the
+                    python programming language and move on to the use of standard libraries, good programming practices
+                    and unit testing We will also introduce the students to web application development and scientific computing
+                    using Python
+                  </div>
+                </div>
+              </div>
+              <!-- Accordion card -->
 
-               <!-- Accordion card -->
-               <div class="card">
+              <!-- Accordion card -->
+              <div class="card">
 
-                   <!-- Card header -->
-                   <div class="card-header" role="tab" id="headingThree">
-                           <h5 class="mb-0">
-                               Instructors</i>
-                           </h5>
+                <!-- Card header -->
+                <div class="card-header" role="tab" id="headingThree">
+                  <h5 class="mb-0">
+                    Instructors</i>
+                  </h5>
 
-                   </div>
-                   <div class="card-body">
-                     Sharan R Y	2016B4A70295G<br>
-Utkarsh Rai	2016A7PS0723G<br>
-Arif Ahmed	2015B4A70370G<br>
-Gargi Balasubramaniam 	2016A7PS0365G <br>
-Aditya Lahiri	2016A7PS0062G<br>
-                   </div>
+                </div>
+                <div class="card-body">
+                  Sharan R Y 2016B4A70295G
+                  <br> Utkarsh Rai 2016A7PS0723G
+                  <br> Arif Ahmed 2015B4A70370G
+                  <br> Gargi Balasubramaniam 2016A7PS0365G
+                  <br> Aditya Lahiri 2016A7PS0062G
+                  <br>
+                </div>
 
-               </div>
-               <!-- Accordion card -->
-           </div>
-           <!--/.Accordion wrapper-->
+              </div>
+              <!-- Accordion card -->
+            </div>
+            <!--/.Accordion wrapper-->
 
-         </div>
-       </div>
-          <div class="modal-footer">
-            <a href="pdf/python.pdf" target=”_blank”> <button type="button" class="btn btn-secondary">Download Course Handout</button></a>
           </div>
+        </div>
+        <div class="modal-footer">
+          <a href="pdf/python.pdf" target=”_blank”>
+            <button type="button" class="btn btn-secondary">Download Course Handout</button>
+          </a>
         </div>
       </div>
     </div>
+  </div>
 
   <!-- Modal: modalQuickView -->
   <!-- Modal: modalQuickView -->
@@ -586,229 +655,236 @@ Aditya Lahiri	2016A7PS0062G<br>
     <div class="modal-dialog modal-lg" role="document">
       <div class="modal-content">
         <div class="modal-header">
-       <h5 class="modal-title" id="exampleModalLabel">Product dev and Design Thinking</h5>
-       <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-         <span aria-hidden="true">&times;</span>
-       </button>
-     </div>
-     <div class="modal-body">
-       <div class="row">
-           <!--Accordion wrapper-->
-           <div class="accordion" id="accordion" role="tablist" aria-multiselectable="true">
+          <h5 class="modal-title" id="exampleModalLabel">Product dev and Design Thinking</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <!--Accordion wrapper-->
+            <div class="accordion" id="accordion" role="tablist" aria-multiselectable="true">
 
-               <!-- Accordion card -->
-               <div class="card">
+              <!-- Accordion card -->
+              <div class="card">
 
-                   <!-- Card header -->
-                   <div class="card-header" role="tab" id="headingOne">
-                           <h5 class="mb-0">
-                               Description</i>
-                           </h5>
+                <!-- Card header -->
+                <div class="card-header" role="tab" id="headingOne">
+                  <h5 class="mb-0">
+                    Description</i>
+                  </h5>
 
-                   </div>
+                </div>
 
-                   <!-- Card body -->
-                   <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion" >
-                       <div class="card-body">
-                        Updating Soon!
-                       </div>
-                   </div>
-               </div>
-               <!-- Accordion card -->
+                <!-- Card body -->
+                <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
+                  <div class="card-body">
+                    Updating Soon!
+                  </div>
+                </div>
+              </div>
+              <!-- Accordion card -->
 
-               <!-- Accordion card -->
-               <div class="card">
+              <!-- Accordion card -->
+              <div class="card">
 
-                   <!-- Card header -->
-                   <div class="card-header" role="tab" id="headingThree">
-                           <h5 class="mb-0">
-                               Instructors</i>
-                           </h5>
+                <!-- Card header -->
+                <div class="card-header" role="tab" id="headingThree">
+                  <h5 class="mb-0">
+                    Instructors</i>
+                  </h5>
 
-                   </div>
-                   <div class="card-body">
-                     Lokesh Garg	2015B3A30418G<br>
-                     Akhil Kamath	2015A8PS0533G<br>
-                     Salil Jain	2015B5A30578G<br>
-                   </div>
-                   <div class="card-header" role="tab" id="headingThree">
-                           <h5 class="mb-0">
-                               Mentors</i>
-                           </h5>
+                </div>
+                <div class="card-body">
+                  Lokesh Garg 2015B3A30418G
+                  <br> Akhil Kamath 2015A8PS0533G
+                  <br> Salil Jain 2015B5A30578G
+                  <br>
+                </div>
+                <div class="card-header" role="tab" id="headingThree">
+                  <h5 class="mb-0">
+                    Mentors</i>
+                  </h5>
 
-                   </div>
-                   <div class="card-body">
-                     Ishaan	2016B2AA0589G<br>
-                     Mehul Mohan	2017A7PS0935G
-                   </div>
+                </div>
+                <div class="card-body">
+                  Ishaan 2016B2AA0589G
+                  <br> Mehul Mohan 2017A7PS0935G
+                </div>
 
-               </div>
-               <!-- Accordion card -->
-           </div>
-           <!--/.Accordion wrapper-->
+              </div>
+              <!-- Accordion card -->
+            </div>
+            <!--/.Accordion wrapper-->
 
-         </div>
-       </div>
-          <div class="modal-footer">
-            <a href="pdf/productdev.pdf" target=”_blank”> <button type="button" class="btn btn-secondary">Download Course Handout</button></a>
           </div>
+        </div>
+        <div class="modal-footer">
+          <a href="pdf/productdev.pdf" target=”_blank”>
+            <button type="button" class="btn btn-secondary">Download Course Handout</button>
+          </a>
         </div>
       </div>
     </div>
+  </div>
   <!-- Modal: modalQuickView -->
   <!-- Modal: modalQuickView -->
   <div class="modal fade" id="ML" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
       <div class="modal-content">
         <div class="modal-header">
-       <h5 class="modal-title" id="exampleModalLabel">Data Science and Machine Learning</h5>
-       <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-         <span aria-hidden="true">&times;</span>
-       </button>
-     </div>
-     <div class="modal-body">
-       <div class="row">
-           <!--Accordion wrapper-->
-           <div class="accordion" id="accordion" role="tablist" aria-multiselectable="true">
+          <h5 class="modal-title" id="exampleModalLabel">Data Science and Machine Learning</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <!--Accordion wrapper-->
+            <div class="accordion" id="accordion" role="tablist" aria-multiselectable="true">
 
-               <!-- Accordion card -->
-               <div class="card">
+              <!-- Accordion card -->
+              <div class="card">
 
-                   <!-- Card header -->
-                   <div class="card-header" role="tab" id="headingOne">
-                           <h5 class="mb-0">
-                               Description</i>
-                           </h5>
+                <!-- Card header -->
+                <div class="card-header" role="tab" id="headingOne">
+                  <h5 class="mb-0">
+                    Description</i>
+                  </h5>
 
-                   </div>
+                </div>
 
-                   <!-- Card body -->
-                   <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion" >
-                       <div class="card-body">
-                         Students will learn to play with Data. Cut it, clean it, prepare it, look into it, diagnose it.
-They will also learn state of the art Machine Learning Algorithms , which they will be
-able to use and apply to the Data at hand and get the best results. Machine learning
-being part science and part engineering, the students will be able to actually see how
-current research in this area is being applied to real world problem. This being a
-developing field, students interested in both science and engineering can substantially
-make the most out of it. As a by-product of this course students will also learn basic
-programming techniques, Python Language, Python Libraries for Machine learning,
-Git Version Control System, Basic Image Processing techniques, Statistics, Linear
-Algebra, Kaggle Platform.
-                       </div>
-                   </div>
-               </div>
-               <!-- Accordion card -->
+                <!-- Card body -->
+                <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
+                  <div class="card-body">
+                    Students will learn to play with Data. Cut it, clean it, prepare it, look into it, diagnose it. They will also learn state
+                    of the art Machine Learning Algorithms , which they will be able to use and apply to the Data at hand
+                    and get the best results. Machine learning being part science and part engineering, the students will
+                    be able to actually see how current research in this area is being applied to real world problem. This
+                    being a developing field, students interested in both science and engineering can substantially make
+                    the most out of it. As a by-product of this course students will also learn basic programming techniques,
+                    Python Language, Python Libraries for Machine learning, Git Version Control System, Basic Image Processing
+                    techniques, Statistics, Linear Algebra, Kaggle Platform.
+                  </div>
+                </div>
+              </div>
+              <!-- Accordion card -->
 
-               <!-- Accordion card -->
-               <div class="card">
+              <!-- Accordion card -->
+              <div class="card">
 
 
-                   <!-- Accordion card -->
-                   <div class="card">
+                <!-- Accordion card -->
+                <div class="card">
 
-                       <!-- Card header -->
-                       <div class="card-header" role="tab" id="headingThree">
-                               <h5 class="mb-0">
-                                   Instructors</i>
-                               </h5>
+                  <!-- Card header -->
+                  <div class="card-header" role="tab" id="headingThree">
+                    <h5 class="mb-0">
+                      Instructors</i>
+                    </h5>
 
-                       </div>
-                       <div class="card-body">
-                         Fenil Suchak	2016B3A70541G<br>
-                         Kaustav Tamuly	2016A3PS0132G<br>
-                         Nikhil Garg	2016B1A30597G<br>
-                       </div>
-                       <div class="card-header" role="tab" id="headingThree">
-                               <h5 class="mb-0">
-                                   Mentors</i>
-                               </h5>
+                  </div>
+                  <div class="card-body">
+                    Fenil Suchak 2016B3A70541G
+                    <br> Kaustav Tamuly 2016A3PS0132G
+                    <br> Nikhil Garg 2016B1A30597G
+                    <br>
+                  </div>
+                  <div class="card-header" role="tab" id="headingThree">
+                    <h5 class="mb-0">
+                      Mentors</i>
+                    </h5>
 
-                       </div>
-                       <div class="card-body">
-                         Atharva Joshi	2017A1PS0801G<br>
-                         Pranav Mahajan	2017AAPS0277G<br>
-                       </div>
-                   </div>
-               </div>
-               <!-- Accordion card -->
+                  </div>
+                  <div class="card-body">
+                    Atharva Joshi 2017A1PS0801G
+                    <br> Pranav Mahajan 2017AAPS0277G
+                    <br>
+                  </div>
+                </div>
+              </div>
+              <!-- Accordion card -->
 
 
-           </div>
-           <!--/.Accordion wrapper-->
+            </div>
+            <!--/.Accordion wrapper-->
 
-         </div>
-       </div>
-          <div class="modal-footer">
-            <a href="pdf/ml.pdf" target=”_blank”> <button type="button" class="btn btn-secondary">Download Course Handout</button></a>
           </div>
+        </div>
+        <div class="modal-footer">
+          <a href="pdf/ml.pdf" target=”_blank”>
+            <button type="button" class="btn btn-secondary">Download Course Handout</button>
+          </a>
         </div>
       </div>
     </div>
+  </div>
   <!-- Modal: modalQuickView -->
   <!-- Modal: modalQuickView -->
   <div class="modal fade" id="quant" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
       <div class="modal-content">
         <div class="modal-header">
-       <h5 class="modal-title" id="exampleModalLabel">Intro to Quantitative Finance & AlgoTrading basics</h5>
-       <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-         <span aria-hidden="true">&times;</span>
-       </button>
-     </div>
-     <div class="modal-body">
-       <div class="row">
-           <!--Accordion wrapper-->
-           <div class="accordion" id="accordion" role="tablist" aria-multiselectable="true">
+          <h5 class="modal-title" id="exampleModalLabel">Intro to Quantitative Finance & AlgoTrading basics</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <!--Accordion wrapper-->
+            <div class="accordion" id="accordion" role="tablist" aria-multiselectable="true">
 
-               <!-- Accordion card -->
-               <div class="card">
+              <!-- Accordion card -->
+              <div class="card">
 
-                   <!-- Card header -->
-                   <div class="card-header" role="tab" id="headingOne">
-                           <h5 class="mb-0">
-                               Description</i>
-                           </h5>
+                <!-- Card header -->
+                <div class="card-header" role="tab" id="headingOne">
+                  <h5 class="mb-0">
+                    Description</i>
+                  </h5>
 
-                   </div>
+                </div>
 
-                   <!-- Card body -->
-                   <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion" >
-                       <div class="card-body">
-                         Updating Soon!
-                       </div>
-                   </div>
-               </div>
-               <!-- Accordion card -->
+                <!-- Card body -->
+                <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
+                  <div class="card-body">
+                    Updating Soon!
+                  </div>
+                </div>
+              </div>
+              <!-- Accordion card -->
 
-               <!-- Accordion card -->
-               <div class="card">
+              <!-- Accordion card -->
+              <div class="card">
 
-                   <!-- Card header -->
-                   <div class="card-header" role="tab" id="headingThree">
-                           <h5 class="mb-0">
-                               Instructors</i>
-                           </h5>
+                <!-- Card header -->
+                <div class="card-header" role="tab" id="headingThree">
+                  <h5 class="mb-0">
+                    Instructors</i>
+                  </h5>
 
-                   </div>
-                   <div class="card-body">
-                     Aditya Dwivedi	2016A3TS0192G<br>
-                     Mohit Bhandari	2016B2A80564G
-                   </div>
+                </div>
+                <div class="card-body">
+                  Aditya Dwivedi 2016A3TS0192G
+                  <br> Mohit Bhandari 2016B2A80564G
+                </div>
 
-               </div>
-               <!-- Accordion card -->
-           </div>
-           <!--/.Accordion wrapper-->
+              </div>
+              <!-- Accordion card -->
+            </div>
+            <!--/.Accordion wrapper-->
 
-         </div>
-       </div>
-          <div class="modal-footer">
-            <a href="pdf/quant.pdf" target=”_blank”> <button type="button" class="btn btn-secondary">Download Course Handout</button></a>
           </div>
+        </div>
+        <div class="modal-footer">
+          <a href="pdf/quant.pdf" target=”_blank”>
+            <button type="button" class="btn btn-secondary">Download Course Handout</button>
+          </a>
         </div>
       </div>
     </div>
+  </div>
   <!-- Modal: modalQuickView -->
 
   <!-- Modal: modalQuickView -->
@@ -816,405 +892,448 @@ Algebra, Kaggle Platform.
     <div class="modal-dialog modal-lg" role="document">
       <div class="modal-content">
         <div class="modal-header">
-       <h5 class="modal-title" id="exampleModalLabel">Introduction to Web Application development using Node.js and React</h5>
-       <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-         <span aria-hidden="true">&times;</span>
-       </button>
-     </div>
+          <h5 class="modal-title" id="exampleModalLabel">Introduction to Web Application development using Node.js and React</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
         <div class="modal-body">
           <div class="row">
-              <!--Accordion wrapper-->
-              <div class="accordion" id="accordion" role="tablist" aria-multiselectable="true">
+            <!--Accordion wrapper-->
+            <div class="accordion" id="accordion" role="tablist" aria-multiselectable="true">
 
-                  <!-- Accordion card -->
-                  <div class="card">
+              <!-- Accordion card -->
+              <div class="card">
 
-                      <!-- Card header -->
-                      <div class="card-header" role="tab" id="headingOne">
-                              <h5 class="mb-0">
-                                  Description</i>
-                              </h5>
+                <!-- Card header -->
+                <div class="card-header" role="tab" id="headingOne">
+                  <h5 class="mb-0">
+                    Description</i>
+                  </h5>
 
-                      </div>
+                </div>
 
-                      <!-- Card body -->
-                      <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion" >
-                          <div class="card-body">
-                            A comprehensive course aimed to teach website design and development to beginners.<br><br>
-Students will learn to code in HTML, CSS and Javascript. The course will also include lectures on using GIT version control system. During the course students will gain intermediate level proficiency for developing React web apps. This course also includes lectures on introduction to React Native. They will be designing 1 website and 1 web application of their own during this course. After taking the course students will have hands on experience of integrating front-end and back-end elements. Students will also be familiarised with industry standards of saving and retrieving data from servers using MongoDB database.
-                          </div>
-                      </div>
+                <!-- Card body -->
+                <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
+                  <div class="card-body">
+                    A comprehensive course aimed to teach website design and development to beginners.
+                    <br>
+                    <br> Students will learn to code in HTML, CSS and Javascript. The course will also include lectures on using
+                    GIT version control system. During the course students will gain intermediate level proficiency for developing
+                    React web apps. This course also includes lectures on introduction to React Native. They will be designing
+                    1 website and 1 web application of their own during this course. After taking the course students will
+                    have hands on experience of integrating front-end and back-end elements. Students will also be familiarised
+                    with industry standards of saving and retrieving data from servers using MongoDB database.
                   </div>
-                  <!-- Accordion card -->
-
-                  <!-- Accordion card -->
-                  <div class="card">
-
-                      <!-- Card header -->
-                      <div class="card-header" role="tab" id="headingThree">
-                              <h5 class="mb-0">
-                                  Instructors</i>
-                              </h5>
-
-                      </div>
-                      <div class="card-body">
-                        <b>Instructor-in-charge:</b> Aryan Agarwal 2016A1PS0705G <br>
-                        <b>Mentor</b>: Rishabh Anand	2017A7PS0111G
-                      </div>
-
-                  </div>
-                  <!-- Accordion card -->
+                </div>
               </div>
-              <!--/.Accordion wrapper-->
+              <!-- Accordion card -->
 
+              <!-- Accordion card -->
+              <div class="card">
+
+                <!-- Card header -->
+                <div class="card-header" role="tab" id="headingThree">
+                  <h5 class="mb-0">
+                    Instructors</i>
+                  </h5>
+
+                </div>
+                <div class="card-body">
+                  <b>Instructor-in-charge:</b> Aryan Agarwal 2016A1PS0705G
+                  <br>
+                  <b>Mentor</b>: Rishabh Anand 2017A7PS0111G
+                </div>
+
+              </div>
+              <!-- Accordion card -->
             </div>
+            <!--/.Accordion wrapper-->
+
           </div>
-          <div class="modal-footer">
-            <a href="pdf/webd.pdf" target=”_blank”> <button type="button" class="btn btn-secondary">Download Course Handout</button></a>
-          </div>
+        </div>
+        <div class="modal-footer">
+          <a href="pdf/webd.pdf" target=”_blank”>
+            <button type="button" class="btn btn-secondary">Download Course Handout</button>
+          </a>
         </div>
       </div>
     </div>
+  </div>
   <!-- Modal: modalQuickView -->
   <!-- Modal: modalQuickView -->
   <div class="modal fade" id="appd" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
       <div class="modal-content">
         <div class="modal-header">
-       <h5 class="modal-title" id="exampleModalLabel">Introductory Android App Development</h5>
-       <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-         <span aria-hidden="true">&times;</span>
-       </button>
-     </div>
-     <div class="modal-body">
-       <div class="row">
-           <!--Accordion wrapper-->
-           <div class="accordion" id="accordion" role="tablist" aria-multiselectable="true">
+          <h5 class="modal-title" id="exampleModalLabel">Introductory Android App Development</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <!--Accordion wrapper-->
+            <div class="accordion" id="accordion" role="tablist" aria-multiselectable="true">
 
-               <!-- Accordion card -->
-               <div class="card">
+              <!-- Accordion card -->
+              <div class="card">
 
-                   <!-- Card header -->
-                   <div class="card-header" role="tab" id="headingOne">
-                           <h5 class="mb-0">
-                               Description</i>
-                           </h5>
+                <!-- Card header -->
+                <div class="card-header" role="tab" id="headingOne">
+                  <h5 class="mb-0">
+                    Description</i>
+                  </h5>
 
-                   </div>
+                </div>
 
-                   <!-- Card body -->
-                   <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion" >
-                       <div class="card-body">
-                         Learn Android App development from seniors of Mobile App Club and the creators/developers of amazing apps like Dojma, ZConnect, ARD, BPGC Login, Quark'17, NMD-ATM etc.
-                       Join in to be a part of the campus' next generation of app developers.
-                        This course is an introduction to Android development, strap in as we explore the mystery behind the apps that drive our everyday life. For more info macbitsgoa.com .
-                       </div>
-                   </div>
-               </div>
-               <!-- Accordion card -->
+                <!-- Card body -->
+                <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
+                  <div class="card-body">
+                    Learn Android App development from seniors of Mobile App Club and the creators/developers of amazing apps like Dojma, ZConnect,
+                    ARD, BPGC Login, Quark'17, NMD-ATM etc. Join in to be a part of the campus' next generation of app developers.
+                    This course is an introduction to Android development, strap in as we explore the mystery behind the
+                    apps that drive our everyday life. For more info macbitsgoa.com .
+                  </div>
+                </div>
+              </div>
+              <!-- Accordion card -->
 
-               <!-- Accordion card -->
-               <div class="card">
+              <!-- Accordion card -->
+              <div class="card">
 
-                   <!-- Card header -->
-                   <div class="card-header" role="tab" id="headingThree">
-                           <h5 class="mb-0">
-                               Instructors</i>
-                           </h5>
+                <!-- Card header -->
+                <div class="card-header" role="tab" id="headingThree">
+                  <h5 class="mb-0">
+                    Instructors</i>
+                  </h5>
 
-                   </div>
-                   <div class="card-body">
-                     Rushikesh Jogdand	2016A4PS0147G<br>
-                     Tanmay Dixit	2016B2A30593G<br>
-                     Priyesh 	2017A7PS0061G<br>
-                     Nipun	2017A8PS0572G<brs>
-                   </div>
+                </div>
+                <div class="card-body">
+                  Rushikesh Jogdand 2016A4PS0147G
+                  <br> Tanmay Dixit 2016B2A30593G
+                  <br> Priyesh 2017A7PS0061G
+                  <br> Nipun 2017A8PS0572G
+                  <brs>
+                </div>
 
-               </div>
-               <!-- Accordion card -->
-           </div>
-           <!--/.Accordion wrapper-->
+              </div>
+              <!-- Accordion card -->
+            </div>
+            <!--/.Accordion wrapper-->
 
-         </div>
-       </div>
-          <div class="modal-footer">
-            <a href="pdf/appd.pdf" target=”_blank”> <button type="button" class="btn btn-secondary">Download Course Handout</button></a>
           </div>
+        </div>
+        <div class="modal-footer">
+          <a href="pdf/appd.pdf" target=”_blank”>
+            <button type="button" class="btn btn-secondary">Download Course Handout</button>
+          </a>
         </div>
       </div>
     </div>
+  </div>
   <!-- Modal: modalQuickView -->
   <!-- Modal: modalQuickView -->
   <div class="modal fade" id="introC" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
       <div class="modal-content">
         <div class="modal-header">
-       <h5 class="modal-title" id="exampleModalLabel">Introduction to Programming in C</h5>
-       <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-         <span aria-hidden="true">&times;</span>
-       </button>
-     </div>
-     <div class="modal-body">
-       <div class="row">
-           <!--Accordion wrapper-->
-           <div class="accordion" id="accordion" role="tablist" aria-multiselectable="true">
+          <h5 class="modal-title" id="exampleModalLabel">Introduction to Programming in C</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <!--Accordion wrapper-->
+            <div class="accordion" id="accordion" role="tablist" aria-multiselectable="true">
 
-               <!-- Accordion card -->
-               <div class="card">
+              <!-- Accordion card -->
+              <div class="card">
 
-                   <!-- Card header -->
-                   <div class="card-header" role="tab" id="headingOne">
-                           <h5 class="mb-0">
-                               Description</i>
-                           </h5>
+                <!-- Card header -->
+                <div class="card-header" role="tab" id="headingOne">
+                  <h5 class="mb-0">
+                    Description</i>
+                  </h5>
 
-                   </div>
+                </div>
 
-                   <!-- Card body -->
-                   <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion" >
-                       <div class="card-body">
-                         Students enrolled for this course shall be taught Basic C Programming without any pre-reuqisite assumptions.
-Apart from having an edge in the on-campus C programming course, students after completing course shall be take up their own
-C Programming projects, as well as feel comfortable in getting hands dirty with other languages, Knowledge of C Programming will help you have an easier grasp on any other language as this is a machine level language.<br><br>
-C Programming forms the base for C++ also which is a heavily demanded language in industry and also most used language by Competitive Programmer.<br><br>
+                <!-- Card body -->
+                <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
+                  <div class="card-body">
+                    Students enrolled for this course shall be taught Basic C Programming without any pre-reuqisite assumptions. Apart from having
+                    an edge in the on-campus C programming course, students after completing course shall be take up their
+                    own C Programming projects, as well as feel comfortable in getting hands dirty with other languages,
+                    Knowledge of C Programming will help you have an easier grasp on any other language as this is a machine
+                    level language.
+                    <br>
+                    <br> C Programming forms the base for C++ also which is a heavily demanded language in industry and also
+                    most used language by Competitive Programmer.
+                    <br>
+                    <br> The course aims to introduce students to the world of programming, how to convert logical to code and
+                    various concepts of C Programming.
+                  </div>
+                </div>
+              </div>
+              <!-- Accordion card -->
 
-The course aims to introduce students to the world of programming, how to convert logical to code and various concepts of C Programming.
-                       </div>
-                   </div>
-               </div>
-               <!-- Accordion card -->
+              <!-- Accordion card -->
+              <div class="card">
 
-               <!-- Accordion card -->
-               <div class="card">
+                <!-- Card header -->
+                <div class="card-header" role="tab" id="headingThree">
+                  <h5 class="mb-0">
+                    Instructors</i>
+                  </h5>
 
-                   <!-- Card header -->
-                   <div class="card-header" role="tab" id="headingThree">
-                           <h5 class="mb-0">
-                               Instructors</i>
-                           </h5>
+                </div>
+                <div class="card-body">
+                  Updating Soon
+                </div>
 
-                   </div>
-                   <div class="card-body">
-                     Updating Soon
-                   </div>
+              </div>
+              <!-- Accordion card -->
+            </div>
+            <!--/.Accordion wrapper-->
 
-               </div>
-               <!-- Accordion card -->
-           </div>
-           <!--/.Accordion wrapper-->
-
-         </div>
-       </div>
-          <div class="modal-footer">
-            <a href="pdf/introc.pdf" target=”_blank”> <button type="button" class="btn btn-secondary">Download Course Handout</button></a>
           </div>
+        </div>
+        <div class="modal-footer">
+          <a href="pdf/introc.pdf" target=”_blank”>
+            <button type="button" class="btn btn-secondary">Download Course Handout</button>
+          </a>
         </div>
       </div>
     </div>
+  </div>
   <!-- Modal: modalQuickView -->
   <!-- Modal: modalQuickView -->
   <div class="modal fade" id="autodesk" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
       <div class="modal-content">
         <div class="modal-header">
-       <h5 class="modal-title" id="exampleModalLabel">Introduction to Autodesk Maya</h5>
-       <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-         <span aria-hidden="true">&times;</span>
-       </button>
-     </div>
-     <div class="modal-body">
-       <div class="row">
-           <!--Accordion wrapper-->
-           <div class="accordion" id="accordion" role="tablist" aria-multiselectable="true">
+          <h5 class="modal-title" id="exampleModalLabel">Introduction to Autodesk Maya</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <!--Accordion wrapper-->
+            <div class="accordion" id="accordion" role="tablist" aria-multiselectable="true">
 
-               <!-- Accordion card -->
-               <div class="card">
+              <!-- Accordion card -->
+              <div class="card">
 
-                   <!-- Card header -->
-                   <div class="card-header" role="tab" id="headingOne">
-                           <h5 class="mb-0">
-                               Description</i>
-                           </h5>
+                <!-- Card header -->
+                <div class="card-header" role="tab" id="headingOne">
+                  <h5 class="mb-0">
+                    Description</i>
+                  </h5>
 
-                   </div>
+                </div>
 
-                   <!-- Card body -->
-                   <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion" >
-                       <div class="card-body">
-                         The course, Introducing Autodesk Maya 2018 , gives students a comprehensive overview of everything that this software has to offer. We begin with a basic introduction to the UI with a practice assignment wherein we make a model of the solar system. Then we deal with modelling and animation in great detail with a number of assignments to help people apply what they have learned. Finally we deal with other fields like shading , texturing , rigging , lighting , rendering , dynamics and nParticles. All in all we cover each and every aspect of computer graphics as applied in industry. This will give students a good start in this field and they can then practice and specialize based on their interest.
-                       </div>
-                   </div>
-               </div>
-               <!-- Accordion card -->
+                <!-- Card body -->
+                <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
+                  <div class="card-body">
+                    The course, Introducing Autodesk Maya 2018 , gives students a comprehensive overview of everything that this software has
+                    to offer. We begin with a basic introduction to the UI with a practice assignment wherein we make a model
+                    of the solar system. Then we deal with modelling and animation in great detail with a number of assignments
+                    to help people apply what they have learned. Finally we deal with other fields like shading , texturing
+                    , rigging , lighting , rendering , dynamics and nParticles. All in all we cover each and every aspect
+                    of computer graphics as applied in industry. This will give students a good start in this field and they
+                    can then practice and specialize based on their interest.
+                  </div>
+                </div>
+              </div>
+              <!-- Accordion card -->
 
-               <!-- Accordion card -->
-               <div class="card">
+              <!-- Accordion card -->
+              <div class="card">
 
-                   <!-- Card header -->
-                   <div class="card-header" role="tab" id="headingThree">
-                           <h5 class="mb-0">
-                               Instructors</i>
-                           </h5>
+                <!-- Card header -->
+                <div class="card-header" role="tab" id="headingThree">
+                  <h5 class="mb-0">
+                    Instructors</i>
+                  </h5>
 
-                   </div>
-                   <div class="card-body">
-                     Vishnu Nair	2017A1PS0800G<br>
-Vinayak Shukla
-                   </div>
+                </div>
+                <div class="card-body">
+                  Vishnu Nair 2017A1PS0800G
+                  <br> Vinayak Shukla
+                </div>
 
-               </div>
-               <!-- Accordion card -->
-           </div>
-           <!--/.Accordion wrapper-->
+              </div>
+              <!-- Accordion card -->
+            </div>
+            <!--/.Accordion wrapper-->
 
-         </div>
-       </div>
-          <div class="modal-footer">
-            <a href="pdf/maya.pdf" target=”_blank”> <button type="button" class="btn btn-secondary">Download Course Handout</button></a>
           </div>
+        </div>
+        <div class="modal-footer">
+          <a href="pdf/maya.pdf" target=”_blank”>
+            <button type="button" class="btn btn-secondary">Download Course Handout</button>
+          </a>
         </div>
       </div>
     </div>
+  </div>
   <!-- Modal: modalQuickView -->
   <!-- Modal: modalQuickView -->
   <div class="modal fade" id="VehicleDesign" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
       <div class="modal-content">
         <div class="modal-header">
-       <h5 class="modal-title" id="exampleModalLabel">Vehicle Design and Dynamics</h5>
-       <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-         <span aria-hidden="true">&times;</span>
-       </button>
-     </div>
-     <div class="modal-body">
-       <div class="row">
-           <!--Accordion wrapper-->
-           <div class="accordion" id="accordion" role="tablist" aria-multiselectable="true">
+          <h5 class="modal-title" id="exampleModalLabel">Vehicle Design and Dynamics</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <!--Accordion wrapper-->
+            <div class="accordion" id="accordion" role="tablist" aria-multiselectable="true">
 
-               <!-- Accordion card -->
-               <div class="card">
+              <!-- Accordion card -->
+              <div class="card">
 
-                   <!-- Card header -->
-                   <div class="card-header" role="tab" id="headingOne">
-                           <h5 class="mb-0">
-                               Description</i>
-                           </h5>
+                <!-- Card header -->
+                <div class="card-header" role="tab" id="headingOne">
+                  <h5 class="mb-0">
+                    Description</i>
+                  </h5>
 
-                   </div>
+                </div>
 
-                   <!-- Card body -->
-                   <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion" >
-                       <div class="card-body">
-                         Vehicle Design and Dynamics course is designed to give an idea of how a vehicle will respond to various situations. This study has its roots in the work of creative engineers who established the methodology of various dynamic systems. As automobiles evolved the understanding of vehicle dynamics became important. Subsequently it has moved towards modeling, analysis, and optimization of multi-body dynamics with accurate positioning, sensing, and calculations with intelligent computer softwares.<br><br>
+                <!-- Card body -->
+                <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
+                  <div class="card-body">
+                    Vehicle Design and Dynamics course is designed to give an idea of how a vehicle will respond to various situations. This
+                    study has its roots in the work of creative engineers who established the methodology of various dynamic
+                    systems. As automobiles evolved the understanding of vehicle dynamics became important. Subsequently
+                    it has moved towards modeling, analysis, and optimization of multi-body dynamics with accurate positioning,
+                    sensing, and calculations with intelligent computer softwares.
+                    <br>
+                    <br> A clear understanding Vehicle Dynamics is needed for predicting behaviour of any vehicle under different
+                    conditions. Responses of components and intuitive feedback to driver governs safety and handling in general.
+                    Also, dynamics of a vehicle can be the deciding factor in any competitive event.
+                    <br>
+                    <br> Keeping this in mind our SAE Club members have designed this course catering to every need. On completion
+                    this certified course, one will have a complete understanding of Vehicle Dynamics enabling them to build
+                    advanced automobiles or competition specific vehicles.
+                  </div>
+                </div>
+              </div>
+              <!-- Accordion card -->
 
-A clear understanding Vehicle Dynamics is needed for predicting behaviour of any vehicle under different conditions. Responses of components and intuitive feedback to driver governs safety and handling in general. Also, dynamics of a vehicle can be the deciding factor in any competitive event.<br><br>
+              <!-- Accordion card -->
+              <div class="card">
 
-Keeping this in mind our SAE Club members have designed this course catering to every need. On completion this certified course, one will have a complete understanding of Vehicle Dynamics enabling them to build advanced automobiles or competition specific vehicles.
-                       </div>
-                   </div>
-               </div>
-               <!-- Accordion card -->
+                <!-- Card header -->
+                <div class="card-header" role="tab" id="headingThree">
+                  <h5 class="mb-0">
+                    Instructors</i>
+                  </h5>
 
-               <!-- Accordion card -->
-               <div class="card">
+                </div>
+                <div class="card-body">
+                  Utkarsh Mahajan 2016A4PS0299G
+                  <br> Priyanshu Kharya
+                  <br> Akash Rajawat
+                  <br> Krishna Kamdi 2016A4PS0273G
+                  <br> Kedar Khapre 2016A1PS0710G
+                  <br> Aman Pandae 2016A3PS0194G
+                  <br>
+                </div>
 
-                   <!-- Card header -->
-                   <div class="card-header" role="tab" id="headingThree">
-                           <h5 class="mb-0">
-                               Instructors</i>
-                           </h5>
+              </div>
+              <!-- Accordion card -->
+            </div>
+            <!--/.Accordion wrapper-->
 
-                   </div>
-                   <div class="card-body">
-                     Utkarsh Mahajan	2016A4PS0299G<br>
-Priyanshu Kharya	<br>
-Akash Rajawat	<br>
-Krishna Kamdi	2016A4PS0273G<br>
-Kedar Khapre	2016A1PS0710G<br>
-Aman Pandae	2016A3PS0194G<br>
-                   </div>
-
-               </div>
-               <!-- Accordion card -->
-           </div>
-           <!--/.Accordion wrapper-->
-
-         </div>
-       </div>
-          <div class="modal-footer">
-            <a href="pdf/vehicledesign.pdf" target=”_blank”> <button type="button" class="btn btn-secondary">Download Course Handout</button></a>
           </div>
+        </div>
+        <div class="modal-footer">
+          <a href="pdf/vehicledesign.pdf" target=”_blank”>
+            <button type="button" class="btn btn-secondary">Download Course Handout</button>
+          </a>
         </div>
       </div>
     </div>
+  </div>
   <!-- Modal: modalQuickView -->
   <!-- Modal: modalQuickView -->
   <div class="modal fade" id="robotics" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
       <div class="modal-content">
         <div class="modal-header">
-       <h5 class="modal-title" id="exampleModalLabel">Introduction to Robotics</h5>
-       <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-         <span aria-hidden="true">&times;</span>
-       </button>
-     </div>
-     <div class="modal-body">
-       <div class="row">
-           <!--Accordion wrapper-->
-           <div class="accordion" id="accordion" role="tablist" aria-multiselectable="true">
+          <h5 class="modal-title" id="exampleModalLabel">Introduction to Robotics</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <!--Accordion wrapper-->
+            <div class="accordion" id="accordion" role="tablist" aria-multiselectable="true">
 
-               <!-- Accordion card -->
-               <div class="card">
+              <!-- Accordion card -->
+              <div class="card">
 
-                   <!-- Card header -->
-                   <div class="card-header" role="tab" id="headingOne">
-                           <h5 class="mb-0">
-                               Description</i>
-                           </h5>
+                <!-- Card header -->
+                <div class="card-header" role="tab" id="headingOne">
+                  <h5 class="mb-0">
+                    Description</i>
+                  </h5>
 
-                   </div>
+                </div>
 
-                   <!-- Card body -->
-                   <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion" >
-                       <div class="card-body">
-As the name suggests this course is made with the intention of teaching all those who are enthusiastic in robotics the basics and recent approaches towards this field.
-                       </div>
-                   </div>
-               </div>
-               <!-- Accordion card -->
+                <!-- Card body -->
+                <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
+                  <div class="card-body">
+                    As the name suggests this course is made with the intention of teaching all those who are enthusiastic in robotics the basics
+                    and recent approaches towards this field.
+                  </div>
+                </div>
+              </div>
+              <!-- Accordion card -->
 
-               <!-- Accordion card -->
-               <div class="card">
+              <!-- Accordion card -->
+              <div class="card">
 
-                   <!-- Card header -->
-                   <div class="card-header" role="tab" id="headingThree">
-                           <h5 class="mb-0">
-                               Instructors</i>
-                           </h5>
+                <!-- Card header -->
+                <div class="card-header" role="tab" id="headingThree">
+                  <h5 class="mb-0">
+                    Instructors</i>
+                  </h5>
 
-                   </div>
-                   <div class="card-body">
-                     G V S S Jaideep Ram	2016B5A30516G<br>
-Amogh Dabholkar	2016A8PS0393G<br>
-Yash Pandit	2016A8PS0772G<br>
-Mihir Kulkarni	2016A4PS0140G<br>
-Mihir Dharmadhikari	2016A8PS0616G<br>
-Kapi Ketan Mehta	2016A4PS0174G<br>
-                   </div>
+                </div>
+                <div class="card-body">
+                  G V S S Jaideep Ram 2016B5A30516G
+                  <br> Amogh Dabholkar 2016A8PS0393G
+                  <br> Yash Pandit 2016A8PS0772G
+                  <br> Mihir Kulkarni 2016A4PS0140G
+                  <br> Mihir Dharmadhikari 2016A8PS0616G
+                  <br> Kapi Ketan Mehta 2016A4PS0174G
+                  <br>
+                </div>
 
-               </div>
-               <!-- Accordion card -->
-           </div>
-           <!--/.Accordion wrapper-->
+              </div>
+              <!-- Accordion card -->
+            </div>
+            <!--/.Accordion wrapper-->
 
-         </div>
-       </div>
-          <div class="modal-footer">
-          <a href="pdf/robotics.pdf" target=”_blank”>  <button type="button" class="btn btn-secondary">Download Course Handout</button></a>
           </div>
+        </div>
+        <div class="modal-footer">
+          <a href="pdf/robotics.pdf" target=”_blank”>
+            <button type="button" class="btn btn-secondary">Download Course Handout</button>
+          </a>
         </div>
       </div>
     </div>
+  </div>
   <!-- Modal: modalQuickView -->
 
 
@@ -1237,6 +1356,7 @@ Kapi Ketan Mehta	2016A4PS0174G<br>
 
   </script>
   <script src="https://www.gstatic.com/firebasejs/5.3.0/firebase.js"></script>
-<script src="js/app.js"></script>
-  </body>
-  </html>
+  <script src="js/app.js"></script>
+</body>
+
+</html>
